@@ -1,3 +1,25 @@
+/*======================
+1.0. General
+========================*/
+header {
+    margin: 0;
+    padding: 0;
+    border: 0;
+/*     font: inherit;
+    font-size: 100%; */
+}
+
+.opacity-0 { opacity: 0; }
+.opacity-25 { opacity: 0.25; }
+.opacity-50 { opacity: 0.5; }
+.opacity-75 { opacity: 0.75; }
+.opacity-100 { opacity: 1; }
+
+html {
+    width: 100%;
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
     margin: 0;
@@ -9,17 +31,55 @@ body {
     overflow-x: hidden;
 }
 
-header {
-    margin: 0;
-    padding: 0;
-    border: 0;
+hr { margin: 30px 0; }
+
+img {
+    max-width: 100%;
+    height: auto;
 }
+
+.cursor-pointer { cursor: pointer; }
+
+/*======================
+1.1. Typography
+========================*/
+a {
+    color: #00b0ff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover,
+a:focus {
+    color: #0f0a51d4;
+    text-decoration: none;
+    transition: 0.5s;
+    outline: none;
+}
+
+ol, ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.fs-12 { font-size: 12px; }
+.fs-14 { font-size: 14px; }
+.fs-15 { font-size: 15px; }
+.fs-16 { font-size: 16px; }
+.fs-18 { font-size: 18px; }
+
+.fw-400 { font-weight: 400 !important; }
+.fw-500 { font-weight: 500; }
+.fw-600 { font-weight: 600; }
+.fw-700 { font-weight: 700; }
 
 /* Header */
 .main-header {
     position: relative;
     width: 100%;
-    background-color: rgb(233, 104, 104);
+    background-color: rgb(255, 255, 255);
     box-shadow: 0 2px 32px rgba(0, 0, 0, 0.15);
 }
 
@@ -32,5 +92,66 @@ header {
 .navbar {
     padding: 0;
 }
+
+/* Marca de la Barra de Navegación */
+.navbar-brand {
+    width: 170px;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav {
+    flex-direction: row;
+}
+
+.navbar .menu-item {
+    position: relative;
+    display: inline-block;
+    margin: 0;
+}
+
+.navbar .menu-item a {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 30px 20px;
+    color: #1D2228;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.navbar .menu-item a:hover {
+    color: #1D2228;
+}  
+
+.navbar .menu-item a::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    margin-top: -15px;
+    width: 30px;
+    height: 30px;
+    background-color: #ffb300;
+    top: 50%;
+    opacity: .3;
+    z-index: -1;
+    border-radius: 50%;
+}
+
+.navbar .menu-item .submenu {
+    position: absolute;
+    top: 110%;
+    background-color: rgb(230, 27, 27);
+    left: 0;
+    box-shadow: 0 2px 32px rgba(0, 0, 0, 0.15);
+    min-width: 250px;
+    border-radius: 8px;
+    z-index: 990;
+    transition: 0.3s;
+    /* opacity: 0; */
+
+}
+
+
 
 

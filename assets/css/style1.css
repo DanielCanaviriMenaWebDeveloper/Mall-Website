@@ -520,11 +520,10 @@ video {
 	font: inherit;
 	font-size: 100%;
 }
-
+/* 
 .opacity-0 {
 	opacity: 0;
 }
-
 .opacity-25 {
 	opacity: 0.25;
 }
@@ -539,7 +538,7 @@ video {
 
 .opacity-100 {
 	opacity: 1;
-}
+} */
 .dark-overlay {
 	position: relative;
 	z-index: 1;
@@ -561,12 +560,12 @@ video {
 	background-color: rgba(0, 0, 0, 0.6);
 }
 
-html {
+/* html {
 	width: 100%;
 	overflow-x: hidden;
-}
+} */
 
-body {
+/* body {
 	font-family: "Open Sans", sans-serif;
 	margin: 0;
 	padding: 0;
@@ -586,7 +585,7 @@ img {
 
 .cursor-pointer {
 	cursor: pointer;
-}
+} */
 
 .close-btn {
 	border: 0;
@@ -823,7 +822,7 @@ blockquote p {
 	font-size: 18px;
 }
 
-.fs-12 {
+/* .fs-12 {
 	font-size: 12px;
 }
 .fs-14 {
@@ -837,9 +836,9 @@ blockquote p {
 }
 .fs-18 {
 	font-size: 18px;
-}
+} */
 
-.fw-400 {
+/* .fw-400 {
 	font-weight: 400 !important;
 }
 .fw-500 {
@@ -850,7 +849,8 @@ blockquote p {
 }
 .fw-700 {
 	font-weight: 700;
-}
+} */
+
 /*======================
 1.2 Section Spacings
 ========================*/
@@ -1384,24 +1384,24 @@ table img {
 	background-color: #00b0ff;
 }
 
-.navbar-brand {
+/* .navbar-brand {
 	width: 170px;
 	margin: 0;
 	padding: 0;
-}
+} */
 
-.navbar-nav {
+/* .navbar-nav {
 	-webkit-box-orient: horizontal;
 	-webkit-box-direction: normal;
 	-ms-flex-direction: row;
 	flex-direction: row;
-}
+} */
 
-.navbar .menu-item {
+/* .navbar .menu-item {
 	position: relative;
 	display: inline-block;
 	margin: 0;
-}
+} */
 
 .navbar .menu-item a {
 	position: relative;
